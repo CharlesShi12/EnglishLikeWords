@@ -21,15 +21,16 @@ public class Dictionary {
         while(scan.hasNext()) {
             words.add(scan.next());
         }
-        return words.toArray(new String[0]);
 
+        return words.toArray(new String[0]);
     }
 
     public static void main(String[] args) {
-        //testing the dictionary
+        //Testing Dictionary Class
         String[] words = getWords();
         System.out.println(words.length);
         for (int i = 0; i < words.length; i += words.length/15) {
             System.out.println("\"" + words[i] + "\"");
         }
     }
+}
