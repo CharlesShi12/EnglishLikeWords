@@ -2,7 +2,7 @@
  * a class that combines LetterSample, CharBag, TrieNode, and Trie to generate random English words
  * that are pronounceable
  */
-public class Gibberisher {
+public class EnglishWords {
     private Trie<CharBag> model;
     private int segmentLength;
     private int processed;
