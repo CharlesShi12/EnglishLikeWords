@@ -11,7 +11,7 @@ public class EnglishWords {
      * a constructor that generates the Gibberisher object according to the inputted segmentLength
      * @param segmentLength an integer that our Gibberisher object is based off of
      */
-    public Gibberisher(int segmentLength){
+    public EnglishWords(int segmentLength){
         this.segmentLength = segmentLength;
         this.model = new Trie<CharBag>();
         this.processed = 0;
