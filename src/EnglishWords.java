@@ -9,7 +9,6 @@ public class EnglishWords {
 
     /**
      * a constructor that generates the Gibberisher object according to the inputted segmentLength
-     * @param segmentLength an integer that our Gibberisher object is based off of
      */
     public EnglishWords(int segmentLength){
         this.segmentLength = segmentLength;
@@ -19,7 +18,6 @@ public class EnglishWords {
 
     /**
      * a method that will add the given LetterSample input to the private Trie<CharBag> model in Gibberisher
-     * @param input a LetterSample which is added to the model
      */
     public void train(LetterSample input){
         if (this.model.get(input.getSegment()) == null){
@@ -36,7 +34,6 @@ public class EnglishWords {
      * a method that will make a corresponding LetterSample to the given String input, the LetterSample will then be
      * used by the public void train(LetterSample input) method to add the given LetterSample to private Trie<CharBag> model
      * allowing us to ultimately add the String input to the private Trie<CharBag> model
-     * @param input a String which is added to the model
      */
     public void train(String input){
         LetterSample[] sample = LetterSample.toSamples(input, this.segmentLength);
@@ -48,7 +45,6 @@ public class EnglishWords {
     /**
      * a method that will perform the public void train(String input) method for every String element in the inputted,
      * ultimately adding the given String[] input to the private Trie<CharBag> model through the other train methods
-     * @param input a String[] which is added to the model
      */
     public void train(String[] input){
         for(int i = 0; i < input.length; i++){
