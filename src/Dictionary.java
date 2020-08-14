@@ -5,10 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Dictionary {
-    /**
-     * Get the words stored in words.txt Generally you should put the words.txt file in the proejct folder, but NOT in the src folder.
-     * @return
-     */
+    // gets the words stored in words.txt
     public static String[] getWords() {
         Scanner scan = null;
         try {
@@ -26,7 +23,7 @@ public class Dictionary {
     }
 
     public static void main(String[] args) {
-        //Testing Dictionary Class
+        // testing Dictionary class
         String[] words = getWords();
         System.out.println(words.length);
         for (int i = 0; i < words.length; i += words.length/15) {
