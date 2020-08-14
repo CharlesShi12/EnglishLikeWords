@@ -7,7 +7,9 @@ import java.util.Scanner;
  * a class that gets the words stored in words.txt
  */
 public class Dictionary {
-    
+    /** 
+     * a class that grabs the words from the words.txt file
+     */
     public static String[] getWords() {
         Scanner scan = null;
         try {
@@ -23,9 +25,11 @@ public class Dictionary {
 
         return words.toArray(new String[0]);
     }
-
+    
+    /** 
+     * testing Dictionary class
+     */
     public static void main(String[] args) {
-        // testing Dictionary class
         String[] words = getWords();
         System.out.println(words.length);
         for (int i = 0; i < words.length; i += words.length/15) {
