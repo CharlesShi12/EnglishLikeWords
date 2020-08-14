@@ -9,8 +9,6 @@ public class LetterSample {
 
     /**
      * a constructor which takes in any single string and single char and creates a LetterSample Object
-     * @param segment a string which represents the private String segment in LetterSample
-     * @param nextLetter a char which represents the private char nextLetter in LetterSample
      */
     public LetterSample(String segment, char nextLetter) {
         this.segment = segment;
@@ -44,8 +42,6 @@ public class LetterSample {
     /**
      * a method that creates and returns an array of letter samples based on a String input and int segmentSize
      * and terminates once it reaches the private static char STOP variable
-     * @param input a string that our letter samples will be generated and based off of
-     * @param segmentSize an int that represents the maximum possible size of each letter sample
      */
     public static LetterSample[] toSamples(String input, int segmentSize) {
         String modified = "";
