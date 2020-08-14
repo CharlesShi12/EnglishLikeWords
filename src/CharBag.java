@@ -1,35 +1,25 @@
-/**
- * a class that generates CharBags
- */
+// a class that generates CharBags
 import java.util.Random;
 public class CharBag {
     private int[] CharBag = new int[27];
     private int size = 0;
 
-    /**
-     * a constructor that creates a CharBag with an private int size equal to 0
-     */
+    // a constructor that creates a CharBag with an private int size equal to 0
     public CharBag(){
     }
 
-    /**
-     * a method that generates and returns an integer index that accurately represents
-     * the inputted character in a certain format (in our case, char a = int 0, char b = int 1, etc.)
-     * @param input a character that our returned int (or known as index) is based off of
-     */
+    // a method that generates and returns an integer index that accurately represents 
+    // the inputted character in a certain format (in our case, char a = int 0, char b = int 1, etc.)
     private int generateIndex(char input){
         if (input == LetterSample.STOP){
             return 26;
-        }else {
+        } else {
             int ascii = input;
             return (ascii - 'a');
         }
     }
 
-    /**
-     * a method that adds a character to the CharBag
-     * @param input the character that will be added to CharBag
-     */
+    // a method that adds a character to the CharBag
     public void add(char input){
         input = Character.toLowerCase(input);
         if (!(Character.isAlphabetic(input))) {
@@ -39,10 +29,7 @@ public class CharBag {
         size++;
     }
 
-    /**
-     * a method that removes a character from the CharBag
-     * @param input the character that will be removed from CharBag
-     */
+    // a method that removes a character from the CharBag
     public void remove(char input) {
         input = Character.toLowerCase(input);
         if (!(Character.isAlphabetic(input))) {
@@ -54,11 +41,8 @@ public class CharBag {
         }
     }
 
-    /**
-     * a method that finds how many occurrences there are of the inputted character in the CharBag and returns the
-     * total occurrences as an integer
-     * @param input the character that this method will find the total occurrences of in the CharBag
-     */
+    // a method that finds how many occurrences there are of the inputted character 
+    // in the CharBag and returns the total occurrences as an integer
     public int getCount(char input){
         input = Character.toLowerCase(input);
         if (!(Character.isAlphabetic(input))) {
@@ -67,16 +51,12 @@ public class CharBag {
         return CharBag[generateIndex(input)];
     }
 
-    /**
-     * a method that returns the current total size of the CharBag
-     */
+    // a method that returns the current total size of the CharBag
     public int getSize(){
         return this.size;
     }
 
-    /**
-     * a method that returns a single String which represents the CharBag in a certain format
-     */
+    // a method that returns a single String which represents the CharBag in a certain format
     public String toString(){
         String output = "CharBag{";
         for(int i = 0; i < 27; i++){
@@ -91,11 +71,10 @@ public class CharBag {
         return output;
     }
 
-    /**
-     * a method that generates and returns a random character in accordance with the CharBag, more specifically,
-     * this method returns a random character based on how many times that character was in the CharBag compared to
-     * all of the other characters
-     */
+  
+    // a method that generates and returns a random character in accordance with the CharBag, more specifically,
+    // this method returns a random character based on how many times that character was in the CharBag compared to
+    // all of the other characters
     public char getRandomChar() {
         if (getSize() <= 0){
             return LetterSample.STOP;
