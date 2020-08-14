@@ -22,7 +22,6 @@ public class TrieNode<T>{
 
     /**
      * a method that sets the private T data of the TrieNode to the inputted T data parameter
-     * @param data the generic T parameter which private T data of TrieNode is set to
      */
     public void setData(T data){
         this.data = data;
@@ -30,7 +29,6 @@ public class TrieNode<T>{
 
     /**
      * a method which will return the TrieNode in accordance with the inputted character
-     * @param letter a character which our output (a TrieNode<T>) is based off of
      */
     public TrieNode<T> getChild(char letter){
         int index;
