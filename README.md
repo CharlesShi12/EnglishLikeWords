@@ -17,7 +17,7 @@ Built with
 ## Installations
 Run this command in your terminal: 
 ```
-git clone https://github.com/CharlesShi12/EnglishLikeWords.git
+https://github.com/CharlesShi12/GibberishGenerator.git
 ```
 Import the folder as a project into your respective IDE and run the Index.java file. 
 
