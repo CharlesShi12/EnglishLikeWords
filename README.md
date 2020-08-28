@@ -1,8 +1,8 @@
 ## Gibberish Generator
-An algorithm that generates random English-like words using a trained model and highly optimized data structures.
+An algorithm that generates random English-like words using trained models and highly optimized data structures.
 
 ## General Technical Description 
-The model used in this project was trained with over 80,000 words to produce accurate/pronounceable outputs. The models looks at the probabilities of letters happening after a letter has already occurred (or conditional probability). For instance, if the letter "s" has occurred, "se" is more likely to happen compared to "sx". The project also used a used a Trie data structure for efficiency in Java as Trie data structures are quite useful for storing short Strings in Java. 
+The models used in this project were trained with over 80,000 words to produce accurate/pronounceable outputs. The models looks at the probabilities of letters happening after a letter has already occurred (or conditional probability). For instance, if the letter "s" has occurred, "se" is more likely to happen compared to "sx". The project also used a used a Trie data structure for efficiency in Java as Trie data structures are quite useful for storing short Strings in Java. 
 
 ## Demonstration
 Video demonstration of this algorithm is linked here: https://youtu.be/2hZ3b-ourXA. 
